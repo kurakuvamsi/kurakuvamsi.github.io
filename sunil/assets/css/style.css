@@ -1058,7 +1058,7 @@ button.scrollTopStick.active {
     height: 27px;
     position: absolute;
     top: 0;
-    right: -35px;
+    right: -160px;
 }
 .top-bar ul.login li a img {
     width: 20px;
