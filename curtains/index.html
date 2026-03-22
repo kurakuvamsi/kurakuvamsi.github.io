@@ -1,0 +1,159 @@
+<!doctype html>
+<html  lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Heaven World Foundation </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+
+<style>
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background: #333;
+}
+
+img{max-width: 100%;}
+
+.curtain {
+	 width: 100%;
+	 height: 100vh;
+	 overflow: hidden;
+}
+ .curtain__wrapper {
+	 width: 100%;
+	 height: 100%;
+}
+ .curtain__panel {
+	 background: #8b0000;
+	 background-image: url("https://images.vexels.com/media/users/17482/101168/preview2/01bdac45c37aff22f75230abf3f019d4-red-curtain-background.png");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 width: 50%;
+	 height: 100vh;
+	 float: left;
+	 position: relative;
+	 z-index: 2;
+	 transition: all 1s ease-out;
+}
+ .curtain__panel--left {
+	 transform: translateX(-100%);
+}
+ .curtain__panel--right {
+	 transform: translateX(100%);
+}
+ .curtain__prize {
+	 background: #333;
+	 /* background-image: url("https://images-na.ssl-images-amazon.com/images/I/41labckSsvL._SY300_.jpg"); */
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 position: absolute;
+	 z-index: 1;
+	 width: 100%;
+	 height: 100%;
+   text-align: center;
+   top: 0%;
+}
+ .curtain__prize h1 {
+	 color: white;
+	 text-align: center;
+}
+ input[type=checkbox] {
+	 position: absolute;
+	 cursor: pointer;
+	 width: 100%;
+	 height: 20%;
+	 z-index: 100;
+	 opacity: 0;
+}
+ input[type=checkbox]:checked ~ div.curtain__panel--left {
+	 transform: translateX(0);
+}
+
+ input[type=checkbox]:checked ~ div.curtain__panel--right {
+	 transform: translateX(0);
+}
+ 
+.rope {
+    position: absolute;
+    top: -40px;
+    right: 10%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.rope {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 0.5s infinite  alternate;
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.rbutton{ 
+    z-index: 99999999999;
+  }
+  .rbutton img{ 
+    max-height: 600px;
+  }
+
+</style>
+
+
+
+  </head>
+
+
+<body>
+
+
+<script>
+    function Click(){
+      console.log(1)
+      setTimeout(function(){ $(".rope").hide(); }, 800);
+    }
+</script>
+     
+<div class="curtain">
+
+  <a class="rope" > 
+     <img src="images/rope.png" onclick="Click()"> 
+  </a>
+
+
+
+    <div class="curtain__wrapper">
+
+      <input type="checkbox" checked onclick="Click()">
+      
+      <div class="curtain__panel curtain__panel--left"> </div> 
+      
+      <div class="curtain__prize">
+        <a href="https://www.heavenworldfoundation.org/" class="rbutton">
+        <img src="images/Welcome_Banner_ Hindi.jpeg">
+     </a> 
+      </div> 
+
+      
+ 
+
+      <div class="curtain__panel curtain__panel--right"> </div> 
+
+
+      
+    </div>  
+  
+  </div> 
+
+</body>
+</html>
