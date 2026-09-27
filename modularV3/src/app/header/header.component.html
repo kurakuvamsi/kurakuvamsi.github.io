@@ -1,0 +1,32 @@
+<header class="main-header">
+  <a class="brand" routerLink="/" (click)="closeMenu()"><span
+      class="brand-mark">⌂</span><span><strong>Pride Modular</strong><small>MODULAR FURNITURE · BETTER
+        LIVING</small></span></a>
+  <nav class="desktop-nav">
+    <a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active">Home</a><a
+      routerLink="/living-room" routerLinkActive="active">Living Room</a><a routerLink="/bedroom"
+      routerLinkActive="active">Bedroom</a><a routerLink="/dining" routerLinkActive="active">Dining</a><a
+      routerLink="/workspace" routerLinkActive="active">Workspace</a><a routerLink="/storage"
+      routerLinkActive="active">Storage</a><a routerLink="/decor" routerLinkActive="active">Decor</a><a
+      routerLink="/gallery" routerLinkActive="active">Gallery</a><a routerLink="/offers"
+      routerLinkActive="active">Offers</a>
+    <div class="more-wrap"><button class="more-btn" [class.active]="moreOpen" (click)="toggleMore()">More
+        <span>⌄</span></button>@if(moreOpen){<div class="more-menu"><a routerLink="/our-clients" routerLinkActive="active"
+          (click)="closeMenu()">Our Clients</a><a routerLink="/our-vision" routerLinkActive="active" (click)="closeMenu()">Our Vision</a><a
+          routerLink="/our-mission" routerLinkActive="active" (click)="closeMenu()">Our Mission</a></div>}</div>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </nav>
+  <!-- <div class="header-actions"><button aria-label="Wishlist">♡</button><button aria-label="Cart">🛒</button></div><button
+    class="mobile-toggle" (click)="toggleMenu()">☰</button> -->
+</header>
+@if(menuOpen){<div class="mobile-menu"><a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" (click)="closeMenu()">Home</a><a routerLink="/living-room" routerLinkActive="active"
+    (click)="closeMenu()">Living Room</a><a routerLink="/bedroom" routerLinkActive="active" (click)="closeMenu()">Bedroom</a><a
+    routerLink="/dining" routerLinkActive="active" (click)="closeMenu()">Dining</a><a routerLink="/workspace" routerLinkActive="active"
+    (click)="closeMenu()">Workspace</a><a routerLink="/storage" routerLinkActive="active" (click)="closeMenu()">Storage</a><a routerLink="/decor" routerLinkActive="active"
+    (click)="closeMenu()">Decor</a><a routerLink="/gallery" routerLinkActive="active" (click)="closeMenu()">Gallery</a><a routerLink="/offers" routerLinkActive="active"
+    (click)="closeMenu()">Offers</a>
+  <details>
+    <summary>More</summary><a routerLink="/our-clients" routerLinkActive="active" (click)="closeMenu()">Our Clients</a><a routerLink="/our-vision" routerLinkActive="active"
+      (click)="closeMenu()">Our Vision</a><a routerLink="/our-mission" routerLinkActive="active" (click)="closeMenu()">Our Mission</a>
+  </details><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+</div>}

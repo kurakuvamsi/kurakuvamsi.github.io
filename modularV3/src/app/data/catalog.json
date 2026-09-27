@@ -1,0 +1,490 @@
+{
+  "categories": [
+    {
+      "slug": "living-room",
+      "name": "Living Room",
+      "eyebrow": "SIGNATURE LIVING COLLECTION",
+      "description": "Sofas, tables and media units designed around relaxed, beautiful living.",
+      "hero": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=90",
+      "products": [
+        {
+          "id": "living-sofa-01",
+          "name": "L-Shaped Sofa",
+          "price": "₹48,999",
+          "oldPrice": "₹59,999",
+          "rating": "4.8",
+          "tag": "BESTSELLER",
+          "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=90",
+          "description": "A deep, comfortable L-shaped sofa with a clean silhouette for contemporary living rooms.",
+          "material": "Performance fabric · Solid wood frame",
+          "size": "280 × 180 cm"
+        },
+        {
+          "id": "living-coffee-02",
+          "name": "Modern Coffee Table",
+          "price": "₹12,999",
+          "oldPrice": "₹16,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=1000&q=90",
+          "description": "Minimal coffee table with a warm wood finish and balanced proportions.",
+          "material": "Engineered wood · Matte finish",
+          "size": "120 × 60 × 42 cm"
+        },
+        {
+          "id": "living-tv-03",
+          "name": "Modular TV Unit",
+          "price": "₹32,999",
+          "oldPrice": "₹41,999",
+          "rating": "4.9",
+          "tag": "POPULAR",
+          "image": "https://images.unsplash.com/photo-1598300056393-4aac492f4344?auto=format&fit=crop&w=1000&q=90",
+          "description": "Flexible storage-led TV console for media, books and everyday essentials.",
+          "material": "Veneer · Powder-coated hardware",
+          "size": "210 × 45 × 180 cm"
+        },
+        {
+          "id": "living-accent-04",
+          "name": "Accent Lounge Chair",
+          "price": "₹18,999",
+          "oldPrice": "₹24,999",
+          "rating": "4.8",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=90",
+          "description": "A sculpted accent chair that adds a refined reading corner to your room.",
+          "material": "Bouclé fabric · Solid wood legs",
+          "size": "78 × 82 × 84 cm"
+        },
+        {
+          "id": "living-console-05",
+          "name": "Entry Console",
+          "price": "₹22,999",
+          "oldPrice": "₹29,999",
+          "rating": "4.6",
+          "tag": "CURATED",
+          "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=90",
+          "description": "Slimline console with concealed storage for elegant entryways.",
+          "material": "Oak finish · Soft-close runners",
+          "size": "150 × 38 × 78 cm"
+        },
+        {
+          "id": "living-side-06",
+          "name": "Designer Side Table",
+          "price": "₹9,499",
+          "oldPrice": "₹12,999",
+          "rating": "4.7",
+          "tag": "SALE",
+          "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=90",
+          "description": "Compact side table with a premium finish for sofas and lounge chairs.",
+          "material": "Wood composite · Brass detail",
+          "size": "50 × 45 × 55 cm"
+        }
+      ]
+    },
+    {
+      "slug": "bedroom",
+      "name": "Bedroom",
+      "eyebrow": "CALM BEDROOM COLLECTION",
+      "description": "Comfort-first beds, bedside pieces and wardrobes for restful personal spaces.",
+      "hero": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=90",
+      "products": [
+        {
+          "id": "bed-bed-01",
+          "name": "Queen Bed with Storage",
+          "price": "₹42,999",
+          "oldPrice": "₹59,999",
+          "rating": "4.9",
+          "tag": "BESTSELLER",
+          "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=90",
+          "description": "A clean-lined queen bed with generous under-bed storage and a soft upholstered headboard.",
+          "material": "Engineered wood · Fabric headboard",
+          "size": "160 × 200 cm"
+        },
+        {
+          "id": "bed-side-02",
+          "name": "Bedside Table",
+          "price": "₹8,999",
+          "oldPrice": "₹11,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=90",
+          "description": "Compact bedside storage with one drawer and an open display shelf.",
+          "material": "Wood veneer · Brass handle",
+          "size": "45 × 40 × 55 cm"
+        },
+        {
+          "id": "bed-wardrobe-03",
+          "name": "Modern Wardrobe",
+          "price": "₹28,999",
+          "oldPrice": "₹38,999",
+          "rating": "4.8",
+          "tag": "POPULAR",
+          "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=90",
+          "description": "Spacious modular wardrobe with balanced hanging, shelving and drawer zones.",
+          "material": "Laminate · Soft-close hardware",
+          "size": "180 × 60 × 210 cm"
+        },
+        {
+          "id": "bed-dresser-04",
+          "name": "Minimal Dresser",
+          "price": "₹19,999",
+          "oldPrice": "₹26,999",
+          "rating": "4.6",
+          "tag": "CURATED",
+          "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=90",
+          "description": "A streamlined dresser designed for daily organization without visual clutter.",
+          "material": "Oak laminate · Metal runners",
+          "size": "120 × 45 × 78 cm"
+        },
+        {
+          "id": "bed-bench-05",
+          "name": "Upholstered Bench",
+          "price": "₹13,999",
+          "oldPrice": "₹18,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=90",
+          "description": "Soft upholstered bench for the foot of the bed or a dressing corner.",
+          "material": "Performance fabric · Solid wood",
+          "size": "120 × 42 × 48 cm"
+        },
+        {
+          "id": "bed-night-06",
+          "name": "Floating Nightstand",
+          "price": "₹7,499",
+          "oldPrice": "₹9,999",
+          "rating": "4.6",
+          "tag": "SALE",
+          "image": "https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1000&q=90",
+          "description": "Wall-mounted bedside storage that keeps floors visually open.",
+          "material": "MDF · Matte laminate",
+          "size": "50 × 32 × 32 cm"
+        }
+      ]
+    },
+    {
+      "slug": "dining",
+      "name": "Dining",
+      "eyebrow": "DINING & HOSTING",
+      "description": "Dining tables and supporting pieces made for everyday meals and memorable gatherings.",
+      "hero": "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1800&q=90",
+      "products": [
+        {
+          "id": "dining-table-01",
+          "name": "4 Seater Dining Table",
+          "price": "₹36,999",
+          "oldPrice": "₹49,999",
+          "rating": "4.8",
+          "tag": "BESTSELLER",
+          "image": "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=90",
+          "description": "A warm, contemporary four-seater table with a generous everyday dining surface.",
+          "material": "Solid wood top · Metal base",
+          "size": "140 × 80 × 76 cm"
+        },
+        {
+          "id": "dining-set-02",
+          "name": "6 Seater Dining Set",
+          "price": "₹54,999",
+          "oldPrice": "₹69,999",
+          "rating": "4.9",
+          "tag": "POPULAR",
+          "image": "https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1000&q=90",
+          "description": "A complete six-seater dining set for family meals and weekend hosting.",
+          "material": "Wood veneer · Upholstered seats",
+          "size": "180 × 90 × 76 cm"
+        },
+        {
+          "id": "dining-side-03",
+          "name": "Dining Sideboard",
+          "price": "₹24,999",
+          "oldPrice": "₹31,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=90",
+          "description": "Elegant sideboard with closed storage for servingware and dining essentials.",
+          "material": "Walnut finish · Soft-close doors",
+          "size": "160 × 45 × 78 cm"
+        },
+        {
+          "id": "dining-chair-04",
+          "name": "Linen Dining Chair",
+          "price": "₹6,999",
+          "oldPrice": "₹8,999",
+          "rating": "4.6",
+          "tag": "CURATED",
+          "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=90",
+          "description": "Comfortable upholstered chair with a refined, lightweight profile.",
+          "material": "Linen blend · Solid wood legs",
+          "size": "48 × 54 × 82 cm"
+        },
+        {
+          "id": "dining-bench-05",
+          "name": "Oak Dining Bench",
+          "price": "₹11,999",
+          "oldPrice": "₹15,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1499933374294-4584851497cc?auto=format&fit=crop&w=1000&q=90",
+          "description": "Flexible bench seating that works beautifully at a family dining table.",
+          "material": "Oak finish · Solid frame",
+          "size": "140 × 40 × 45 cm"
+        },
+        {
+          "id": "dining-bar-06",
+          "name": "Compact Bar Cabinet",
+          "price": "₹27,999",
+          "oldPrice": "₹34,999",
+          "rating": "4.8",
+          "tag": "FEATURED",
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=90",
+          "description": "A sophisticated storage cabinet for glassware, bottles and entertaining accessories.",
+          "material": "Wood veneer · Brass hardware",
+          "size": "90 × 45 × 120 cm"
+        }
+      ]
+    },
+    {
+      "slug": "workspace",
+      "name": "Workspace",
+      "eyebrow": "FOCUSED WORKSPACES",
+      "description": "Desks, chairs and storage that help work-from-home spaces feel calm and productive.",
+      "hero": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=90",
+      "products": [
+        {
+          "id": "work-desk-01",
+          "name": "Modern Study Table",
+          "price": "₹21,999",
+          "oldPrice": "₹29,999",
+          "rating": "4.8",
+          "tag": "BESTSELLER",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=90",
+          "description": "A focused study desk with cable-friendly organization and a clean working surface.",
+          "material": "Wood veneer · Powder-coated frame",
+          "size": "140 × 60 × 75 cm"
+        },
+        {
+          "id": "work-chair-02",
+          "name": "Ergonomic Office Chair",
+          "price": "₹14,999",
+          "oldPrice": "₹19,999",
+          "rating": "4.7",
+          "tag": "POPULAR",
+          "image": "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?auto=format&fit=crop&w=1000&q=90",
+          "description": "Supportive ergonomic chair with breathable upholstery for long working sessions.",
+          "material": "Mesh · Adjustable metal base",
+          "size": "68 × 68 × 112 cm"
+        },
+        {
+          "id": "work-desk-03",
+          "name": "Executive Desk",
+          "price": "₹34,999",
+          "oldPrice": "₹44,999",
+          "rating": "4.9",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=90",
+          "description": "A generous executive desk with concealed cable management and premium detailing.",
+          "material": "Oak veneer · Metal accents",
+          "size": "180 × 80 × 76 cm"
+        },
+        {
+          "id": "work-shelf-04",
+          "name": "Open Office Shelf",
+          "price": "₹16,999",
+          "oldPrice": "₹22,999",
+          "rating": "4.6",
+          "tag": "CURATED",
+          "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=90",
+          "description": "Open shelving for books, documents, plants and workspace accessories.",
+          "material": "MDF · Oak finish",
+          "size": "90 × 35 × 180 cm"
+        },
+        {
+          "id": "work-console-05",
+          "name": "Workstation Console",
+          "price": "₹18,999",
+          "oldPrice": "₹24,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1000&q=90",
+          "description": "Compact console that combines a work surface with practical storage.",
+          "material": "Laminate · Soft-close drawers",
+          "size": "120 × 50 × 76 cm"
+        },
+        {
+          "id": "work-lamp-06",
+          "name": "Architect Desk Lamp",
+          "price": "₹4,999",
+          "oldPrice": "₹6,999",
+          "rating": "4.6",
+          "tag": "SALE",
+          "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1000&q=90",
+          "description": "A sculptural task light for a focused desk setup.",
+          "material": "Metal · Matte finish",
+          "size": "22 × 22 × 52 cm"
+        }
+      ]
+    },
+    {
+      "slug": "storage",
+      "name": "Storage",
+      "eyebrow": "SMART STORAGE",
+      "description": "Elegant wardrobes, cabinets and organizers for a clutter-free home.",
+      "hero": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=90",
+      "products": [
+        {
+          "id": "storage-unit-01",
+          "name": "Modular Storage Unit",
+          "price": "₹32,999",
+          "oldPrice": "₹42,999",
+          "rating": "4.8",
+          "tag": "BESTSELLER",
+          "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=90",
+          "description": "Flexible storage wall with a mix of open shelves and concealed cabinets.",
+          "material": "Laminate · Soft-close hardware",
+          "size": "210 × 45 × 200 cm"
+        },
+        {
+          "id": "storage-cabinet-02",
+          "name": "Tall Display Cabinet",
+          "price": "₹26,999",
+          "oldPrice": "₹34,999",
+          "rating": "4.7",
+          "tag": "POPULAR",
+          "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=90",
+          "description": "Tall display and storage cabinet for books, ceramics and collectibles.",
+          "material": "Walnut laminate · Glass doors",
+          "size": "80 × 42 × 190 cm"
+        },
+        {
+          "id": "storage-bench-03",
+          "name": "Shoe Storage Bench",
+          "price": "₹11,999",
+          "oldPrice": "₹15,999",
+          "rating": "4.6",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1000&q=90",
+          "description": "Entryway bench with hidden shoe storage and a comfortable top.",
+          "material": "Engineered wood · Fabric cushion",
+          "size": "100 × 38 × 48 cm"
+        },
+        {
+          "id": "storage-side-04",
+          "name": "Sideboard Cabinet",
+          "price": "₹23,999",
+          "oldPrice": "₹29,999",
+          "rating": "4.8",
+          "tag": "CURATED",
+          "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=90",
+          "description": "Low sideboard that brings concealed organization into dining and living spaces.",
+          "material": "Oak finish · Brass pulls",
+          "size": "160 × 45 × 78 cm"
+        },
+        {
+          "id": "storage-book-05",
+          "name": "Open Bookcase",
+          "price": "₹14,999",
+          "oldPrice": "₹19,999",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=90",
+          "description": "Open vertical bookcase for flexible organization and display.",
+          "material": "Oak laminate · Metal frame",
+          "size": "80 × 35 × 180 cm"
+        },
+        {
+          "id": "storage-drawer-06",
+          "name": "Six Drawer Chest",
+          "price": "₹20,999",
+          "oldPrice": "₹27,999",
+          "rating": "4.7",
+          "tag": "SALE",
+          "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=90",
+          "description": "Six-drawer chest for organized clothing, linens and accessories.",
+          "material": "Veneer · Soft-close runners",
+          "size": "140 × 45 × 82 cm"
+        }
+      ]
+    },
+    {
+      "slug": "decor",
+      "name": "Decor",
+      "eyebrow": "FINISHING TOUCHES",
+      "description": "Lighting, planters and accents that add personality to every room.",
+      "hero": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1800&q=90",
+      "products": [
+        {
+          "id": "decor-set-01",
+          "name": "Premium Home Decor Set",
+          "price": "₹4,999",
+          "oldPrice": "₹6,999",
+          "rating": "4.8",
+          "tag": "BESTSELLER",
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=90",
+          "description": "A coordinated collection of neutral accents for shelves, consoles and coffee tables.",
+          "material": "Ceramic · Natural textures",
+          "size": "Set of 5 pieces"
+        },
+        {
+          "id": "decor-lamp-02",
+          "name": "Designer Floor Lamp",
+          "price": "₹6,999",
+          "oldPrice": "₹9,999",
+          "rating": "4.7",
+          "tag": "POPULAR",
+          "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1000&q=90",
+          "description": "Warm ambient floor lamp with a refined silhouette for lounge and reading corners.",
+          "material": "Metal · Linen shade",
+          "size": "42 × 42 × 155 cm"
+        },
+        {
+          "id": "decor-planter-03",
+          "name": "Accent Planter Set",
+          "price": "₹2,999",
+          "oldPrice": "₹4,499",
+          "rating": "4.6",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1000&q=90",
+          "description": "A trio of planters designed to bring soft greenery into modern interiors.",
+          "material": "Ceramic · Textured finish",
+          "size": "Set of 3"
+        },
+        {
+          "id": "decor-mirror-04",
+          "name": "Arched Wall Mirror",
+          "price": "₹7,999",
+          "oldPrice": "₹10,999",
+          "rating": "4.8",
+          "tag": "CURATED",
+          "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1000&q=90",
+          "description": "An elegant arched mirror that visually opens up entryways and bedrooms.",
+          "material": "Clear mirror · Metal frame",
+          "size": "70 × 5 × 110 cm"
+        },
+        {
+          "id": "decor-vase-05",
+          "name": "Sculptural Vase",
+          "price": "₹2,499",
+          "oldPrice": "₹3,499",
+          "rating": "4.7",
+          "tag": "NEW",
+          "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=90",
+          "description": "A sculptural statement vase for shelves and side tables.",
+          "material": "Stoneware · Matte glaze",
+          "size": "22 × 22 × 32 cm"
+        },
+        {
+          "id": "decor-cushion-06",
+          "name": "Textured Cushion Set",
+          "price": "₹1,999",
+          "oldPrice": "₹2,999",
+          "rating": "4.6",
+          "tag": "SALE",
+          "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=90",
+          "description": "Layered cushions with tactile fabrics to soften sofas and beds.",
+          "material": "Cotton blend · Feather fill",
+          "size": "Set of 4"
+        }
+      ]
+    }
+  ]
+}

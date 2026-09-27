@@ -1,0 +1,22 @@
+@if(product) {
+<section class="detail-page">
+  <div class="detail-crumb"><a routerLink="/">Home</a><span>›</span><a [routerLink]="['/', category.slug]">{{category.name}}</a><span>›</span>{{product.name}}</div>
+  <div class="detail-layout">
+    <div class="visual-column">
+      <div class="main-image" #zoomBox (mouseenter)="zoom=true" (mouseleave)="zoom=false" (mousemove)="move($event, zoomBox)">
+        <img [src]="product.image" [alt]="product.name"><span class="magnify-label">MOVE TO MAGNIFY</span>
+        <div class="magnifier" [class.active]="zoom" [style.left.%]="zoomX" [style.top.%]="zoomY" [style.background-image]="'url(' + product.image + ')'" [style.background-position]="zoomX + '% ' + zoomY + '%'" ></div>
+      </div><div class="thumb"><img [src]="product.image" [alt]="product.name"></div>
+    </div>
+    <div class="details">
+      <span class="eyebrow">{{product.tag}} · {{category.name}}</span><h1>{{product.name}}</h1>
+      <div class="rating">★★★★★ <span>{{product.rating}} / 5</span></div><p class="description">{{product.description}}</p>
+      <div class="price"><b>{{product.price}}</b><del>{{product.oldPrice}}</del><span>INCLUSIVE OF TAXES</span></div>
+      <div class="specs"><div><small>MATERIAL</small><b>{{product.material}}</b></div><div><small>DIMENSIONS</small><b>{{product.size}}</b></div></div>
+      <div class="detail-note"><span>✓</span><div><b>Made for modern homes</b><small>Thoughtful proportions, premium finishes and dependable everyday comfort.</small></div></div>
+      <a class="primary-btn" routerLink="/contact">Enquire About This Design <span>→</span></a><a class="back-link" [routerLink]="['/', category.slug]">← Back to {{category.name}}</a>
+    </div>
+  </div>
+  <section class="related"><span class="eyebrow">KEEP EXPLORING</span><h2>More from {{category.name}}</h2><div class="related-grid">@for(item of category.products; track item.id){ @if(item.id !== product.id){<a [routerLink]="['/product', item.id]" class="related-card"><img [src]="item.image" [alt]="item.name"><b>{{item.name}}</b><small>{{item.price}}</small></a>}}</div></section>
+</section>
+} @else { <section class="not-found"><h1>Design not found</h1><a routerLink="/">Return Home</a></section> }

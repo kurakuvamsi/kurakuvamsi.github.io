@@ -1,0 +1,19 @@
+<section class="hero-slider">
+  @for(slide of slides; track slide.title; let i=$index){
+    <div class="slide" [class.active]="currentSlide===i" [style.background-image]="'linear-gradient(90deg,rgba(3,48,43,.92),rgba(3,48,43,.35),rgba(3,48,43,.05)),url(' + slide.image + ')'">
+      <div class="hero-content"><span>{{slide.eyebrow}}</span><h1>{{slide.title}}</h1><p>{{slide.copy}}</p><a [routerLink]="slide.link">{{slide.button}} <b>→</b></a></div><div class="offer-badge"><small>{{slide.offer}}</small><strong>{{i===0?'40%':'NEW'}}</strong><small>{{i===0?'ON SELECTED DESIGNS':'Pride Modular'}}</small></div>
+    </div>
+  }
+  <button class="slider-arrow left" (click)="prev()" aria-label="Previous slide">‹</button><button class="slider-arrow right" (click)="next()" aria-label="Next slide">›</button>
+  <div class="slider-dots">@for(slide of slides; track $index){<button [class.active]="currentSlide===$index" (click)="goTo($index)" [attr.aria-label]="'Slide '+($index+1)"></button>}</div>
+</section>
+
+<section class="store-intro"><div><span class="kicker">WELCOME TO Pride Modular</span><h2>Furniture that makes <em>home feel yours.</em></h2></div><p>We curate modern modular furniture for living, sleeping, dining and working. Every collection is selected to bring together clean design, useful storage, durable finishes and a warm sense of home.</p><a routerLink="/about">Discover Our Story →</a></section>
+
+<section class="trust-strip"><div><b>✦</b><strong>Premium Materials</strong><small>Made for everyday life</small></div><div><b>⌂</b><strong>Design Consultation</strong><small>Ideas tailored to your space</small></div><div><b>◇</b><strong>Flexible Collections</strong><small>Mix, match and make it yours</small></div><div><b>✓</b><strong>Customer Care</strong><small>Support before and after purchase</small></div></section>
+
+<section class="home-section"><div class="section-head"><div><span class="kicker">SHOP BY CATEGORY</span><h2>Made for every room</h2><p>Explore our most-loved spaces and find a collection that fits your lifestyle.</p></div><a routerLink="/gallery">View Gallery →</a></div><div class="category-cards">@for(category of catalog; track category.slug){<a class="category-card" [routerLink]="['/',category.slug]"><img [src]="category.hero" [alt]="category.name"><div><span>{{category.products.length}} DESIGNS</span><h3>{{category.name}}</h3><b>Explore Collection →</b></div></a>}</div></section>
+
+<section class="home-section best"><div class="section-head"><div><span class="kicker">BEST SELLERS</span><h2>Designed to be lived with</h2><p>Signature pieces selected from across our collections.</p></div><a routerLink="/offers">View More →</a></div><div class="best-grid">@for(category of catalog.slice(0,4); track category.slug){@for(product of category.products.slice(0,1); track product.id){<article class="best-card"><a [routerLink]="['/product',product.id]" class="best-img"><img [src]="product.image" [alt]="product.name"><span>{{product.tag}}</span></a><div><small>{{category.name}}</small><h3>{{product.name}}</h3><p>{{product.description}}</p><strong>{{product.price}}</strong><a [routerLink]="['/product',product.id]">View Details →</a></div></article>}}</div></section>
+
+<section class="home-promo"><div><span class="kicker">YOUR HOME. YOUR WAY.</span><h2>Not sure where to start?</h2><p>Talk to our design team about your room, measurements, style and storage needs.</p><a routerLink="/contact">Book a Design Consultation →</a></div><div class="promo-stat"><b>36+</b><span>signature designs</span><b>6</b><span>room collections</span></div></section>

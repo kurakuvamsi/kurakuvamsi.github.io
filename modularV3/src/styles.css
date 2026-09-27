@@ -1,0 +1,3 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,Arial,sans-serif;color:#17241f;background:#fff}button,input,textarea,select{font-family:inherit}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+:root{--green:#073f38;--green-deep:#04342f;--gold:#b89032;--gold-light:#d9b866;--cream:#fbf7eb}
+h1,h2{font-family:"Cormorant Garamond",Georgia,serif}

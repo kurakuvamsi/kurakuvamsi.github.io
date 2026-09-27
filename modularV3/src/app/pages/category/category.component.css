@@ -1,0 +1,362 @@
+.category-hero {
+    min-height: 380px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    color: #fff;
+    position: relative;
+    overflow: hidden
+}
+
+.category-hero:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, rgba(255, 255, 255, .04), transparent 45%);
+    pointer-events: none
+}
+
+.hero-inner {
+    max-width: 650px;
+    position: relative;
+    z-index: 1;
+    animation: rise .7s ease both
+}
+
+.hero-inner span,
+.section-kicker {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #d9b866
+}
+
+.hero-inner h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 72px;
+    line-height: .95;
+    margin: 13px 0 12px
+}
+
+.hero-inner p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #e9f0ec;
+    max-width: 550px
+}
+
+.content {
+    padding: 34px 5% 70px;
+    max-width: 1500px;
+    margin: auto
+}
+
+.crumb {
+    font-size: 11px;
+    color: #8b9491;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 10px
+}
+
+.crumb a {
+    color: #075348;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 25px
+}
+
+.title-row h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #073f38;
+    font-size: 40px;
+    margin: 6px 0
+}
+
+.title-row p {
+    font-size: 12px;
+    color: #78837f;
+    margin: 0
+}
+
+.title-row select {
+    height: 42px;
+    border: 1px solid #dfe3df;
+    background: #fff;
+    border-radius: 6px;
+    padding: 0 14px;
+    font-size: 11px;
+    color: #26352f
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px
+}
+
+.product-card {
+    border: 1px solid #e5e7e3;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: .35s;
+    animation: rise .6s ease both
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 22px 45px rgba(4, 52, 47, .11)
+}
+
+.product-image {
+    height: 350px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #f4f1e8
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .65s ease
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.06)
+}
+
+.tag {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    background: #073f38;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 4px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 800
+}
+
+.zoom-hint {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    color: #073f38;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+    box-shadow: 0 6px 18px #0002
+}
+
+.product-info {
+    padding: 18px
+}
+
+.rating {
+    font-size: 10px;
+    color: #c3922e;
+    letter-spacing: 1px
+}
+
+.rating em {
+    font-style: normal;
+    color: #8b9491;
+    letter-spacing: 0;
+    margin-left: 5px
+}
+
+.product-info h3 {
+    font-size: 17px;
+    color: #142c26;
+    margin: 9px 0 7px
+}
+
+.product-info p {
+    font-size: 13px;
+    color: #7a8581;
+    line-height: 1.6;
+    min-height: 35px;
+    margin: 0
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 13px 0 15px
+}
+
+.price b {
+    font-size: 19px;
+    color: #073f38
+}
+
+.price del {
+    font-size: 11px;
+    color: #9aa19e
+}
+
+.view-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background: #073f38;
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    transition: .25s
+}
+
+.view-btn:hover {
+    background: #b89032;
+    transform: translateY(-1px)
+}
+
+.collection-gallery {
+    margin-top: 70px;
+    padding-top: 42px;
+    border-top: 1px solid #e2dfd5
+}
+
+.gallery-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px
+}
+
+.gallery-heading h2 {
+    font: 700 37px 'Cormorant Garamond', serif;
+    color: #073f38;
+    margin: 5px 0 0
+}
+
+.gallery-heading a {
+    color: #075348;
+    font-size: 11px;
+    font-weight: 800;
+    text-decoration: none
+}
+
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px
+}
+
+.gallery-row a {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 7px;
+    position: relative
+}
+
+.gallery-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s
+}
+
+.gallery-row span {
+    position: absolute;
+    inset: auto 8px 8px 8px;
+    background: #fff;
+    color: #073f38;
+    padding: 7px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 800;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: .25s
+}
+
+.gallery-row a:hover img {
+    transform: scale(1.08)
+}
+
+.gallery-row a:hover span {
+    opacity: 1;
+    transform: none
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@media(max-width:900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .gallery-row {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media(max-width:600px) {
+    .category-hero {
+        min-height: 300px;
+        padding: 0 6%
+    }
+
+    .hero-inner h1 {
+        font-size: 55px
+    }
+
+    .content {
+        padding: 25px 5% 50px
+    }
+
+    .title-row {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr
+    }
+
+    .product-image {
+        height: 300px
+    }
+
+    .gallery-row {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .gallery-heading {
+        align-items: start;
+        gap: 12px;
+        flex-direction: column
+    }
+}

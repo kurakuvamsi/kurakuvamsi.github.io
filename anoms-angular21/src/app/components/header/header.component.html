@@ -1,0 +1,50 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a routerLink="/" class="brand" (click)="closeMenu()" aria-label="Almighty Nations Organisations Home">
+      <span class="brand-mark">A</span>
+      <span class="brand-copy"><strong>ALMIGHTY</strong><small class="text-center">Nations Organisation</small></span>
+
+      <!-- <div class="image-fram-">
+        <img src="assets/feature/employment-livelihood.png" alt="Employment & Livelihood" class="img-fluid topic-image-"
+          style="height:100px" loading="lazy">
+      </div> -->
+    </a>
+
+    <button class="menu-toggle" type="button" (click)="toggleMenu()" [attr.aria-expanded]="mobileOpen"
+      aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" [class.open]="mobileOpen">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">Home</a>
+
+      <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="closeMenu()">About</a>
+
+      <div class="programs-wrap">
+        <button type="button" class="programs-btn" (click)="toggleServices()" [attr.aria-expanded]="servicesOpen">Our
+          Services <span>⌄</span></button>
+        <div class="programs-menu" [class.show]="servicesOpen">
+          <a routerLink="/education-child-development" routerLinkActive="active" (click)="closeMenu()">Education</a>
+          <a routerLink="/health-orphan-child-care" routerLinkActive="active" (click)="closeMenu()">Health & Care</a>
+          <a routerLink="/leadership-development" routerLinkActive="active" (click)="closeMenu()">Leadership</a>
+          <a routerLink="/employment-livelihood" routerLinkActive="active" (click)="closeMenu()">Livelihood</a>
+          <a routerLink="/research-problem-solving" routerLinkActive="active" (click)="closeMenu()">Research</a>
+        </div>
+      </div>
+
+      <div class="programs-wrap">
+        <button type="button" class="programs-btn" (click)="togglePrograms()" [attr.aria-expanded]="programsOpen">More
+          <span>⌄</span></button>
+        <div class="programs-menu" [class.show]="programsOpen">
+          <a routerLink="/income-concepts" (click)="closeMenu()">Income Concepts</a>
+          <a routerLink="/retired-employee-advisory" (click)="closeMenu()">Retired Employee Advisory</a>
+          <a routerLink="/missionary-area-infrastructure" (click)="closeMenu()">Missionary Infrastructure</a>
+          <a routerLink="/schools-hostels-lodges-transport" (click)="closeMenu()">Schools, Hostels & Transport</a>
+        </div>
+      </div>
+
+      <a routerLink="/contact-us" routerLinkActive="active" (click)="closeMenu()">Contact Us</a>
+
+    </nav>
+  </div>
+</header>
