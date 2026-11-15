@@ -16,6 +16,10 @@ npm start
 
 Open http://localhost:4200. On login choose Student or Teaching Staff; password is `Demo@123`. If sample data is missing click Restore sample data.
 
+## GitHub Pages
+
+The production build uses `/eduorbit/` as its base path for the project URL. To publish an update, run `npm run build`, copy the contents of `dist/eduorbit-v7/browser/` into this project folder, and push the changes to `main`. GitHub Pages serves the app from `https://kurakuvamsi.github.io/eduorbit/`.
+
 ## Android
 
 ```bash
