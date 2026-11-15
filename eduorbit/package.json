@@ -5,6 +5,7 @@
   "scripts": {
     "start": "ng serve --host 0.0.0.0",
     "build": "ng build --configuration production",
+    "build:pages": "npm run build && node scripts/create-pages-fallback.mjs",
     "build:dev": "ng build --configuration development",
     "android:add": "npx cap add android",
     "android:sync": "npm run build && npx cap sync android",
