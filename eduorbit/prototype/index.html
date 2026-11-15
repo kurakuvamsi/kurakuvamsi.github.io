@@ -94,6 +94,10 @@ body{color:var(--ink);background:var(--bg)}h1,h2,h3,.brand{font-family:'Plus Jak
 @media (min-width: 751px) {
   .sidebar { transform: none !important; transition: none !important; }
 }
+@media (max-width: 750px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .main { width: 100%; min-width: 0; }
+}
 </style></head><body><div id="root"></div><script>
 const ROLES=['Admin','Principal','Teaching Staff','Non-Teaching Staff','Student'];const EMOJIS=['🛡️','🎓','👩‍🏫','🗂️','🎒'];const USERS=[['admin@eduorbit.demo','Admin','Alex Morgan'],['principal@eduorbit.demo','Principal','Dr. Ananya Rao'],['teacher@eduorbit.demo','Teaching Staff','Priya Menon'],['office@eduorbit.demo','Non-Teaching Staff','Rahul Kumar'],['student@eduorbit.demo','Student','Aarav Sharma']];
 const S0=[{id:1,name:'Aarav Sharma',roll:'STU-2401',program:'Computer Science',section:'A',email:'student@eduorbit.demo',phone:'9876543210',status:'Active'},{id:2,name:'Diya Reddy',roll:'STU-2402',program:'Business Studies',section:'B',email:'diya@campus.edu',phone:'9876543211',status:'Active'},{id:3,name:'Rohan Patel',roll:'STU-2403',program:'Mathematics',section:'A',email:'rohan@campus.edu',phone:'9876543212',status:'Active'},{id:4,name:'Isha Kapoor',roll:'STU-2404',program:'Computer Science',section:'C',email:'isha@campus.edu',phone:'9876543213',status:'Active'},{id:5,name:'Vihaan Nair',roll:'STU-2405',program:'Physics',section:'B',email:'vihaan@campus.edu',phone:'9876543214',status:'Inactive'},{id:6,name:'Meera Iyer',roll:'STU-2406',program:'Business Studies',section:'A',email:'meera@campus.edu',phone:'9876543215',status:'Active'}];
