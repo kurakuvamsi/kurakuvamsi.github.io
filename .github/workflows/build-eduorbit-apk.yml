@@ -1,0 +1,60 @@
+name: Build EduOrbit Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'eduorbit/**'
+      - '.github/workflows/build-eduorbit-apk.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: eduorbit/package-lock.json
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Install Android SDK packages
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Install Node dependencies
+        run: npm ci
+        working-directory: eduorbit
+
+      - name: Build web assets for Android
+        run: npm run build -- --base-href /
+        working-directory: eduorbit
+
+      - name: Add Android platform
+        run: npx cap add android
+        working-directory: eduorbit
+
+      - name: Sync Capacitor
+        run: npx cap sync android
+        working-directory: eduorbit
+
+      - name: Assemble debug APK
+        run: ./gradlew --no-daemon assembleDebug
+        working-directory: eduorbit/android
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eduorbit-debug-apk
+          path: eduorbit/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 7

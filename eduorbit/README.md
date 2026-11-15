@@ -22,14 +22,16 @@ The production build uses `/eduorbit/` as its base path for the project URL. To 
 
 ## Android
 
+The `Build EduOrbit Android APK` GitHub Actions workflow builds and uploads a debug APK when this project changes. Download the `eduorbit-debug-apk` artifact from the successful workflow run. This APK is for testing and is not a Play Store release.
+
 ```bash
-npm run build
+npm run build -- --base-href /
 npx cap add android
 npx cap sync android
 npx cap open android
 ```
 
-Requires Android Studio and the Android SDK. No prebuilt APK or verified compiled `dist` folder is provided.
+Local Android builds require JDK 21, Android Studio, and Android SDK 35. The workflow-generated APK is a debug build available as a GitHub Actions artifact for seven days.
 
 ## Layout
 
