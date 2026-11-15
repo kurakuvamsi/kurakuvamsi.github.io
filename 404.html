@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found</title>
+  <style>
+    body { font: 16px system-ui, sans-serif; color: #24234a; margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f8f9fd; }
+    main { max-width: 32rem; padding: 2rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404</h1>
+    <p>The requested page could not be found.</p>
+  </main>
+  <script>
+    const appBase = '/eduorbit/';
+    const routes = new Set(['home', 'students', 'staff', 'attendance', 'assignments', 'examinations', 'library', 'timetable', 'leaves', 'fees', 'notifications', 'profile']);
+    const route = location.pathname.startsWith(appBase) ? location.pathname.slice(appBase.length).split('/')[0] : '';
+    if (routes.has(route)) {
+      fetch(`${appBase}index.html`, { cache: 'no-cache' })
+        .then(response => {
+          if (!response.ok) throw new Error(`EduOrbit entry returned HTTP ${response.status}`);
+          return response.text();
+        })
+        .then(html => {
+          document.open();
+          document.write(html);
+          document.close();
+        })
+        .catch(error => {
+          document.querySelector('main').textContent = 'EduOrbit could not be loaded. Please try again.';
+          console.error(error);
+        });
+    }
+  </script>
+</body>
+</html>

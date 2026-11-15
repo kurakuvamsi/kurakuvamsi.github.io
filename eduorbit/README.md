@@ -18,7 +18,7 @@ Open http://localhost:4200. On login choose Student or Teaching Staff; password 
 
 ## GitHub Pages
 
-The production build uses `/eduorbit/` as its base path for the project URL. To publish an update, run `npm run build:pages`, copy the contents of `dist/eduorbit-v7/browser/` into this project folder, and push the changes to `main`. The build creates a `404.html` fallback so refreshing an Angular route works on GitHub Pages. GitHub Pages serves the app from `https://kurakuvamsi.github.io/eduorbit/`.
+The production build uses `/eduorbit/` as its base path for the project URL. To publish an update, run `npm run build`, copy the contents of `dist/eduorbit-v7/browser/` into this project folder, and push the changes to `main`. The repository-root `404.html` loads EduOrbit for its Angular routes, so refreshing an internal page works on GitHub Pages. The app is served from `https://kurakuvamsi.github.io/eduorbit/`.
 
 ## Android
 
