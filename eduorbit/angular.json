@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "eduorbit-v7": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "outputPath": "dist/eduorbit-v7",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [{"glob": "**/*", "input": "public"}],
+            "styles": ["src/styles.css"]
+          },
+          "configurations": {
+            "production": {"budgets": [{"type": "initial", "maximumWarning": "1mb", "maximumError": "2mb"}], "outputHashing": "all"},
+            "development": {"optimization": false, "extractLicenses": false, "sourceMap": true}
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {"buildTarget": "eduorbit-v7:build:production"},
+            "development": {"buildTarget": "eduorbit-v7:build:development"}
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "8ef47894-29a2-49ae-b6c6-aa119b0a775e"
+  }
+}
