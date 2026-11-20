@@ -98,6 +98,108 @@ body{color:var(--ink);background:var(--bg)}h1,h2,h3,.brand{font-family:'Plus Jak
   .shell { grid-template-columns: minmax(0, 1fr); }
   .main { width: 100%; min-width: 0; }
 }
+</style><style>
+/* Final responsive overrides keep the complete experience usable on touch screens. */
+html,body,#root{width:100%;max-width:100%;min-width:0}
+body{overflow-x:hidden}
+button,.btn,.seg,.role{touch-action:manipulation}
+.hero::before,.hero::after{pointer-events:none}
+
+@media(max-width:900px){
+  .login{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+  .hero{padding:clamp(24px,4vw,48px)}
+  .login-right{padding:28px}
+}
+
+@media(max-width:750px){
+  .login{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;min-height:100svh}
+  .hero{min-height:0;padding:24px 20px;gap:18px}
+  .hero h1{font-size:clamp(39px,10vw,56px);line-height:1.04;letter-spacing:-2.5px;margin:17px 0}
+  .hero p{font-size:14px;line-height:1.65}
+  .hero-foot{display:flex;gap:clamp(14px,5vw,30px);padding-top:16px}
+  .hero-foot strong{font-size:20px}
+  .hero-foot span{font-size:10px}
+  .login-right{align-items:flex-start;padding:24px 16px max(24px,env(safe-area-inset-bottom))}
+  .login-card{width:min(485px,100%);margin:0 auto}
+  .login-card h2{font-size:clamp(26px,7vw,32px)}
+  .roles{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:18px 0}
+  .role{min-height:72px;padding:10px;font-size:12px}
+  .role.active{padding:9px}
+  .role span{font-size:21px;margin-bottom:5px}
+  .field{font-size:13px;margin:14px 0}
+  .field input,.field select{font-size:16px}
+  .hint{line-height:1.55}
+  .shell{grid-template-columns:minmax(0,1fr);width:100%;min-height:100svh;overflow-x:clip}
+  .sidebar{width:min(280px,86vw);max-height:100dvh;overflow-y:auto;padding-top:max(22px,env(safe-area-inset-top))}
+  .sidebar .brand{margin-bottom:25px}
+  .nav button{min-height:46px;padding:11px 13px}
+  .side-bottom{margin-top:20px}
+  .main{width:100%;min-width:0}
+  .topbar{height:auto;min-height:64px;gap:8px;padding:8px 12px}
+  .topbar>div:first-child{min-width:0;gap:8px!important}
+  .mobile-menu{flex:none;width:44px;height:44px;padding:0}
+  .crumb{min-width:0;max-width:calc(100vw - 132px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}
+  .top-right{gap:7px;flex:none}
+  .role-pill{padding:7px 9px}
+  .top-right .avatar{width:34px;height:34px}
+  .content{width:100%;min-width:0;padding:18px 12px max(22px,env(safe-area-inset-bottom))}
+  .page-header{align-items:stretch;flex-direction:column;gap:10px;margin-bottom:18px}
+  .page-header h1{font-size:clamp(24px,7vw,30px);line-height:1.15;overflow-wrap:anywhere}
+  .page-header>.btn,.page-header>.btn.primary{width:100%;min-height:46px}
+  .welcome-strip{padding:18px;gap:14px}
+  .welcome-strip .btn{width:100%;white-space:normal}
+  .demo-health{align-items:stretch}
+  .demo-health .btn{width:100%;min-height:44px}
+  .metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:16px 0}
+  .metric{min-width:0;min-height:126px;padding:14px}
+  .metric .n{font-size:clamp(22px,7vw,27px)}
+  .metric .lbl{overflow-wrap:anywhere}
+  .dashboard-grid,.two-columns,.assignment-list{grid-template-columns:minmax(0,1fr);gap:12px}
+  .chartbox,.activity{min-width:0;padding:17px;min-height:0}
+  .bars{gap:8px;padding-right:2px;padding-left:2px}
+  .bar-wrap{font-size:9px}
+  .toolbar{align-items:stretch;flex-direction:column;padding:14px;gap:9px}
+  .toolbar>*{max-width:100%;min-width:0}
+  .toolbar input{width:100%;min-width:0}
+  .toolbar .btn{width:100%;min-height:44px}
+  .table-scroll{width:100%;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+  .table-scroll table{min-width:700px}
+  .notice-grid,.book-grid{grid-template-columns:minmax(0,1fr)}
+  .library-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .library-stat{min-width:0;padding:14px}
+  .library-stat strong{font-size:24px}
+  .results-grid,.report-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .report-small,.result-kpi{min-width:0;padding:12px}
+  .section-tabs{gap:7px}
+  .seg{min-height:44px;padding:10px 12px}
+  .student-picker,.report-filter{align-items:stretch}
+  .student-picker select,.report-filter select{width:100%;min-width:0}
+  .form-grid{grid-template-columns:minmax(0,1fr)}
+  .form-grid>*{min-width:0}
+  .modal-overlay{padding:10px;overflow-y:auto;align-items:center}
+  .modal{width:100%;max-width:620px;max-height:calc(100dvh - 20px - env(safe-area-inset-top) - env(safe-area-inset-bottom));padding:18px;border-radius:16px}
+  .modal-head{gap:10px}
+  .modal-head h2{font-size:21px}
+  .modal-actions{flex-direction:column-reverse;align-items:stretch}
+  .modal-actions .btn{width:100%;min-height:44px}
+  .profile-card{padding:20px}
+  .profile-row{align-items:flex-start;flex-direction:column;gap:5px}
+  .toast{left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));text-align:center}
+  button,.btn,.seg,.role{min-height:44px}
+}
+
+@media(max-width:380px){
+  .hero{padding:20px 16px}
+  .hero-foot{gap:12px}
+  .hero-foot strong{font-size:18px}
+  .login-right{padding-right:12px;padding-left:12px}
+  .content{padding-right:10px;padding-left:10px}
+  .metrics{grid-template-columns:minmax(0,1fr)}
+  .results-grid,.report-cards{grid-template-columns:minmax(0,1fr)}
+  .calendar-wrap{padding:11px}
+  .calendar-grid{gap:3px}
+  .day{min-height:44px;border-radius:8px}
+}
 </style></head><body><div id="root"></div><script>
 const ROLES=['Admin','Principal','Teaching Staff','Non-Teaching Staff','Student'];const EMOJIS=['🛡️','🎓','👩‍🏫','🗂️','🎒'];const USERS=[['admin@eduorbit.demo','Admin','Alex Morgan'],['principal@eduorbit.demo','Principal','Dr. Ananya Rao'],['teacher@eduorbit.demo','Teaching Staff','Priya Menon'],['office@eduorbit.demo','Non-Teaching Staff','Rahul Kumar'],['student@eduorbit.demo','Student','Aarav Sharma']];
 const S0=[{id:1,name:'Aarav Sharma',roll:'STU-2401',program:'Computer Science',section:'A',email:'student@eduorbit.demo',phone:'9876543210',status:'Active'},{id:2,name:'Diya Reddy',roll:'STU-2402',program:'Business Studies',section:'B',email:'diya@campus.edu',phone:'9876543211',status:'Active'},{id:3,name:'Rohan Patel',roll:'STU-2403',program:'Mathematics',section:'A',email:'rohan@campus.edu',phone:'9876543212',status:'Active'},{id:4,name:'Isha Kapoor',roll:'STU-2404',program:'Computer Science',section:'C',email:'isha@campus.edu',phone:'9876543213',status:'Active'},{id:5,name:'Vihaan Nair',roll:'STU-2405',program:'Physics',section:'B',email:'vihaan@campus.edu',phone:'9876543214',status:'Inactive'},{id:6,name:'Meera Iyer',roll:'STU-2406',program:'Business Studies',section:'A',email:'meera@campus.edu',phone:'9876543215',status:'Active'}];
